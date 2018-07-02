@@ -62,5 +62,9 @@ function placeOrder(cardNumber) {
   if (cardNumber == null) {
     return("Sorry, we don't have a credit card on file for you.");
   }
+  else { 
+  return(`Your total cost is ${Total()} which will be charged to the card ${cardNumber}.`);
 
+    
+  }
 }
