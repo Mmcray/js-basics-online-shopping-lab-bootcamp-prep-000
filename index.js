@@ -14,7 +14,7 @@ var newObject = {
   itemName: item,
   itemPrice: Math.round(Math.random()*100)
 };
- cart.push(toAdd);
+ cart.push(newObject);
  return(`${item} has been added to your cart.`);
  // write your code here
 }
