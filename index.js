@@ -53,7 +53,7 @@ function removeFromCart(item) {
 for (i = 0; i < len; i++) {
     switch (getCart()[i].itemName) {
       case item :
-      cart.splice([i],1);
+      cart.prototype.splice(getCart()[i].itemname,1);
       return(cart);
 
       default: 
@@ -61,18 +61,7 @@ for (i = 0; i < len; i++) {
     }
   }
 }
-function removeFromCart(item) {
-  var i;
-  var len = cart.length;
-for (i = 0; i < len; i++) {
-    if (item = getCart()[i].itemName) {
-      return(cart.splice([i],1));
-    }
-else {
-      return('That item is not in your cart');
-    }
-  }
-}
+
 function placeOrder(cardNumber) {
   // write your code here
 }
