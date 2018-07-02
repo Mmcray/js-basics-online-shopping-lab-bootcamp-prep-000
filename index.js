@@ -48,18 +48,14 @@ return(sum);
 }
 
 function removeFromCart(item) {
-  var i;
-  var len = cart.length;
-for (i = 0; i < len; i++) {
-    switch (getCart()[i].itemName) {
-      case item :
-      cart.prototype.splice(getCart()[i].itemname,1);
-      return(cart);
 
-      default: 
-      return('That item is not in your cart');
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item) {
+      cart.splice(i, 1);
+      return cart;
     }
-  }
+}
+  return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
